@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Sitio - Bienvenido</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('./img/FondoI.png') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .background::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); /* Blanco semitransparente */
+      z-index: 1;
+    }
+
+    .navbar {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #007bff;
+    }
+
+    .nav-item {
+      margin-right: 10px;
+    }
+
+    .jumbotron {
+      background-color: #ffffff;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px; /* Bordes redondeados */
+      position: relative;
+      z-index: 1;
+      margin-top: 50px; /* Baja el contenedor */
+      padding-top: 50px; /* Aumenta la altura */
+      padding-bottom: 50px; /* Aumenta la altura */
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .icon-container {
+      font-size: 50px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: #007bff;
+      margin: 20px 0;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Infinite Run</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="juego.html">Juego</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="acercade.html">Acerca de</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contenido de la página -->
+<div class="container mt-5 text-center">
+  <div class="jumbotron">
+    <h1 class="display-4">Infinite Run</h1>
+    <div class="icon-container">
+      <i class="fas fa-gamepad"></i> <!-- Icono de control de juego -->
+    </div>
+    <div class="divider"></div>
+    <br>
+    <p><a href="juego.html" class="btn btn-primary btn-lg">Jugar</a></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2024 Infinite Run. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
